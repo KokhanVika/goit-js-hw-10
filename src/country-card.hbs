@@ -1,0 +1,13 @@
+{{#each this}}
+    <div class="country-title">
+        <img src="{{flags.svg}}" alt="flag of {{fifa}}" class="country-image">
+        <h2 class="country-name">{{name.official}}</h2>
+    </div>
+    <ul class="country-description">
+        <li class="country-description__item">Capital: {{capital}}</li>
+        <li class="country-description__item">Population: {{population}}</li>
+        {{#each languages}}
+        <li class="country-description__item">Languages: {{this}}</li>
+        {{/each}}
+    </ul>
+{{/each}}
